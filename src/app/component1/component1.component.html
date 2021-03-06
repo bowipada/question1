@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="col1">
+      <input NumberOnly [(ngModel)]="num" (change)="onChangeNum()">
+    </div>
+    <div class="col2">
+      <select [(ngModel)]="checkType" (change)="onChangeCheckType()">
+          <option [value]="1">isPrime</option>
+          <option [value]="2">isFibonacci</option>
+      </select>
+    </div>
+    <div class="col3">
+        <ng-container *ngIf="isNotEmpty()"> {{result}}</ng-container>
+    </div>
+  </div>

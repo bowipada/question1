@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.col1,
+.col2,
+.col3 {
+    height: 100%;
+}
+
+.col1 {
+    width: 200px;
+}
+
+.col2 {
+    flex: 2;
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+}
+
+.col3 {
+    width: 300px;
+}
